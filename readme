@@ -5,9 +5,9 @@ Install Anaconda: Download and install the Anaconda distribution from the offici
 Create a new project folder. Let’s name it “dino”. Open VS Code in this folder and open terminal.
 
 Create a new conda environment: Open Anaconda Prompt or your terminal and create a new conda environment by running the following command
-```
+'''
 conda create --name myenv python=3.10
-```
+'''
 This will create a new environment named myenv with Python 3.10 installed.
 
 Activate the environment: Once the environment is created, activate it using the following command:
