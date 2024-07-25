@@ -1,0 +1,30 @@
+fork from 
+Step 0: Setting up the Project
+Install Anaconda: Download and install the Anaconda distribution from the official website for your operating system from here.
+
+Create a new project folder. Let’s name it “dino”. Open VS Code in this folder and open terminal.
+
+Create a new conda environment: Open Anaconda Prompt or your terminal and create a new conda environment by running the following command
+```
+conda create --name myenv python=3.10
+```
+This will create a new environment named myenv with Python 3.10 installed.
+
+Activate the environment: Once the environment is created, activate it using the following command:
+```
+conda activate myenv
+```
+Install PyTorch: Install the PyTorch library with CUDA support (for GPU acceleration) using the following command:
+```
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+```
+This command installs PyTorch, TorchVision, and TorchAudio with the CUDA toolkit version 11.1. You can change the version of the CUDA toolkit as per your requirement.
+
+Test the installation: To verify the PyTorch installation, run the following command to start a Python interpreter in your conda environment:
+
+python
+Then, import the PyTorch library and print its version as follows:
+
+import torch
+print(torch.__version__)
+This should print the version number of PyTorch installed in your environment.
